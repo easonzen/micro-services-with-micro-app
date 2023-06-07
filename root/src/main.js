@@ -1,11 +1,16 @@
 import Vue from 'vue'
 import App from './App.vue'
-import router from './router'
+import routes from './router'
 import microApp from '@micro-zoe/micro-app'
+
+Vue.config.productionTip = false
 
 microApp.start()
 
-Vue.config.productionTip = false
+const router = new VueRouter({
+  mode: 'history',
+  routes,
+})
 
 new Vue({
   router,
