@@ -4,7 +4,7 @@ module.exports = defineConfig({
   transpileDependencies: true,
   devServer: {
     headers: {
-      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Origin': '*'
     }
   }
 })

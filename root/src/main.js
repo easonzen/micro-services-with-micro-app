@@ -1,4 +1,5 @@
 import Vue from 'vue'
+import VueRouter from 'vue-router'
 import App from './App.vue'
 import routes from './router'
 import microApp from '@micro-zoe/micro-app'
@@ -9,10 +10,11 @@ microApp.start()
 
 const router = new VueRouter({
   mode: 'history',
-  routes,
+  base: process.env.BASE_URL,
+  routes
 })
 
 new Vue({
   router,
-  render: h => h(App)
+  render: (h) => h(App)
 }).$mount('#app')
