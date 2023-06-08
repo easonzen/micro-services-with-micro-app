@@ -1,11 +1,11 @@
 <template>
   <div>
-    <h1>RMS子应用</h1>
+    <h1>ARK子应用</h1>
     <!-- 
       name(必传)：应用名称
-      url(必传)：应用地址，会被自动补全为http://localhost:4000/index.html
+      url(必传)：应用地址，会被自动补全为http://localhost:5000/index.html
      -->
-    <micro-app name="rms" url="http://localhost:4000/" baseroute="/rms"></micro-app>
+    <micro-app name="ark" url="http://localhost:5000" baseroute="/ark" iframe></micro-app>
   </div>
 </template>
 

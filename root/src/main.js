@@ -6,7 +6,9 @@ import microApp from '@micro-zoe/micro-app'
 
 Vue.config.productionTip = false
 
-microApp.start()
+microApp.start({
+  'disable-memory-router': true // 关闭虚拟路由
+})
 
 const router = new VueRouter({
   mode: 'history',
